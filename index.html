@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Fundamentals Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Fundamentals Analyzer</h1>
+        <form id="stockForm">
+            <label for="peRatio">P/E Ratio:</label>
+            <input type="number" id="peRatio" name="peRatio" step="0.01" required><br>
+
+            <label for="debtEquityRatio">Debt/Equity Ratio:</label>
+            <input type="number" id="debtEquityRatio" name="debtEquityRatio" step="0.01" required><br>
+
+            <label for="sectorPeRatio">Sector P/E Ratio:</label>
+            <input type="number" id="sectorPeRatio" name="sectorPeRatio" step="0.01" required><br>
+
+            <label for="pbRatio">P/B Ratio:</label>
+            <input type="number" id="pbRatio" name="pbRatio" step="0.01" required><br>
+
+            <label for="roe">Return on Equity (ROE):</label>
+            <input type="number" id="roe" name="roe" step="0.01" required><br>
+
+            <label for="dividendYield">Dividend Yield:</label>
+            <input type="number" id="dividendYield" name="dividendYield" step="0.01" required><br>
+
+            <label for="marketCapitalization">Market Capitalization ($):</label>
+            <input type="number" id="marketCapitalization" name="marketCapitalization" step="0.01" required><br>
+
+            <button type="button" onclick="analyzeStock()">Analyze</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="javascripts.js"></script>
+</body>
+</html>
